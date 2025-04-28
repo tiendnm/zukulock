@@ -104,3 +104,10 @@ If you have ideas or want to contribute to improving the app, feel free to provi
   
 
 For any questions or support, please reach out via email: [tien.dnm@outlook.com].
+
+
+----------
+
+## License
+
+This project is licensed under the [MIT License](LICENSE).
