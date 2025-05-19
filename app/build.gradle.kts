@@ -33,16 +33,13 @@ android {
     kotlinOptions {
         jvmTarget = "11"
     }
+    dependenciesInfo {
+        includeInApk = false
+        includeInBundle = false
+    }
 }
 
 dependencies {
-
     implementation(libs.rikka.shizuku.api)
     implementation(libs.rikka.shizuku.provider)
-//    implementation(libs.androidx.core.ktx)
-//    implementation(libs.androidx.appcompat)
-//    implementation(libs.material)
-//    testImplementation(libs.junit)
-//    androidTestImplementation(libs.androidx.junit)
-//    androidTestImplementation(libs.androidx.espresso.core)
 }
