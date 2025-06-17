@@ -19,5 +19,5 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "Shizuku Sleep"
+rootProject.name = "Screen Lock"
 include(":app")

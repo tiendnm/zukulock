@@ -5,13 +5,18 @@ import android.content.Intent
 import android.content.pm.PackageManager
 import android.os.IBinder
 import android.util.Log
+import android.widget.Toast
 import rikka.shizuku.Shizuku
 
 class SleepService : Service() {
 
-    private val REQUEST_CODE: Int = 0;
+    private val REQUEST_CODE: Int = 0
 
     private fun checkPermission(code: Int): Boolean {
+        if (!Shizuku.pingBinder()) {
+            Toast.makeText(this, "Shizuku service is not running", Toast.LENGTH_LONG).show()
+            return false
+        }
         if (Shizuku.isPreV11()) {
             // Pre-v11 is unsupported
             return false
@@ -29,8 +34,9 @@ class SleepService : Service() {
             return false
         }
     }
+
     override fun onStartCommand(intent: Intent?, flags: Int, startId: Int): Int {
-        val check = checkPermission(REQUEST_CODE);
+        val check = checkPermission(REQUEST_CODE)
         if (check) {
             runShellCommand()
         }
@@ -38,9 +44,10 @@ class SleepService : Service() {
 
         return START_NOT_STICKY
     }
+
     private fun runShellCommand() {
         try {
-            ShizukuHelper.useNewProcess( arrayOf("input", "keyevent", "26"), null, null)
+            ShizukuHelper.useNewProcess(arrayOf("input", "keyevent", "26"), null, null)
         } catch (e: Exception) {
             Log.e("ShizukuShell", "Error running shell command", e)
         }
