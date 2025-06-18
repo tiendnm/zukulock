@@ -1,6 +1,7 @@
 # ZukuLock
 
-<img src="https://img.shields.io/endpoint?url=https://apt.izzysoft.de/fdroid/api/v1/shield/com.tiendnm.zukulock&label=Zukulock&cacheSeconds=86400" alt="version">
+[<img src="https://img.shields.io/endpoint?url=https://apt.izzysoft.de/fdroid/api/v1/shield/com.tiendnm.zukulock&label=Zukulock&cacheSeconds=86400" alt="version">](https://apt.izzysoft.de/fdroid/index/apk/com.tiendnm.zukulock) [<img src="https://shields.rbtlog.dev/simple/com.tiendnm.zukulock" alt="RB shield">](https://shields.rbtlog.dev/com.tiendnm.zukulock)
+
 
 [![IzzyOnDroid](assets/IzzyOnDroid2.png)](https://apt.izzysoft.de/fdroid/index/apk/com.tiendnm.zukulock)
 
