@@ -1,0 +1,1 @@
+toggle the screen on or off with a single tap

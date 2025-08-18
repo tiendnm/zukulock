@@ -1,0 +1,1 @@
+Signing key changed. Updating from v1.0.0 requires to uninstall and re-install the app.
